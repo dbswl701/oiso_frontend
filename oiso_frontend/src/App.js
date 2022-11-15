@@ -1,9 +1,10 @@
 import './App.css';
+import Navbar from './Component/Navber';
 
 function App() {
   return (
     <div>
-      OISO_FRONTEND
+      <Navbar />
     </div>
   );
 }
