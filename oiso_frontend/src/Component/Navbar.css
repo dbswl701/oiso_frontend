@@ -33,7 +33,7 @@ body {
 
 /* a 태그는 inline요소이기 때문에 
 block요소로 만들어 줌으로써 세로길이 채워준다 */
-#menu li a {
+#menu button a {
   padding-left: 10px;
   padding-right: 10px;
   line-height: 60px;
