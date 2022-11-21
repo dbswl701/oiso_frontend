@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       {/* // main page */}
-      <Main /> 
+      {/* <Main />  */}
 
       {/* // 로그인 페이지 */}
       <Login />

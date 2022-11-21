@@ -13,10 +13,10 @@ function Navbar(){
         <li><a href="#">카테고리별 검색</a></li>
         <li><a href="#">로그인</a></li>
         <li><a href="#">회원가입</a></li> */}
-        <button><a href="#">지역별 검색</a></button>
-        <button><a href="#">카테고리별 검색</a></button>
-        <button><a href="#">로그인</a></button>
-        <button><a href="#">회원가입</a></button>
+        <button>지역별 검색</button>
+        <button>카테고리별 검색</button>
+        <button>로그인</button>
+        <button>회원가입</button>
       </ul>
     </div>
   )
