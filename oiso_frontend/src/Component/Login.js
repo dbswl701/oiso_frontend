@@ -1,5 +1,6 @@
 import Navbar from './Navbar';
 import { useState } from 'react';
+import './Login.css';
 
 function Login() {
   const [id, setId] = useState('');
@@ -10,47 +11,21 @@ function Login() {
   return (
     <div>
       <Navbar />
-
-      <input
-        placeholder="아이디"
-        id="id"
-        className="login"
-        onChange={e => {
-          setId(e.target.value);
-        }}
-      />
-      <input
-        type="password"
-        placeholder="비밀번호"
-        id="password"
-        className="login"
-        onChange={e => {
-          setPw(e.target.value);
-        }}
-      />
-      <button
-        type="dbswl701@ajou.ac.kr"
-        className="1234"
-        onClick={e => {
-          if (realId == id) {
-            if (realPw == pw) {
-              e.stopPropagation();
-              alert('로그인');
-              // goToMain(); 메인 페이지로 이동
-            }
-          } else {
-            alert('아이디 혹은 비밀번호가 일치하지 않습니다.');
-          }
-        }}
-      >로그인</button>
-      <button
-        type="dbswl701@ajou.ac.kr"
-        className="1234"
-        onClick={e => {
-          // 회원가입 페이지로 이동
-        }}
-      >회원가입</button>
-
+      <form id="loginForm">
+        <input type="text" placeholder="아이디" id="id" className="text-Field" onChange={e => { setId(e.target.value); }} />
+        <input type="password" placeholder="비밀번호" id="password" className="text-Field" onChange={e => { setPw(e.target.value); }} /><br />
+        <button type="dbswl701@ajou.ac.kr" className="button" 
+          onClick={e => { 
+            // 검증 후 
+            // 메인 페이지로 이동
+          }}
+        >로그인</button>
+        <button type="dbswl701@ajou.ac.kr" className="button"
+          onClick={e => {
+            // 회원가입 페이지로 이동
+          }}
+        >회원가입</button>
+      </form>
     </div>
   );
 }

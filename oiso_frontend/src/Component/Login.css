@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: bisque;
+}
+
+#loginForm{
+  background-color: #EEEFF1;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.text-Field {
+  font-size: 14px;
+  width: 100%;
+  /* border: none; */
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.button {
+  width : 50%;
+  background-color:aquamarine;
+}
+
