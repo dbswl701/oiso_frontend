@@ -1,7 +1,7 @@
 import Navbar from '../Navbar';
 import { useState } from 'react';
 import './MyPage.css';
-import ItemList from './ItemList'
+import ItemList from './BookingList'
 import BookingList from './BookingList'
 
 function MyPage() {
@@ -53,8 +53,7 @@ function MyPage() {
           <button>최근 1년</button>
         </div>
         <article>
-          <BookingList />
-          <ItemList itemList={itemList}/>
+          <BookingList itemList={itemList}/>
         </article>
       </div>
       
