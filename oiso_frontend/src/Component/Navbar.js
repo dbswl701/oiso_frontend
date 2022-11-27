@@ -12,7 +12,7 @@ function Navbar(){
       <form id="search-box">
         <input id="search-txt" type="text" placeholder="검색어를 입력해주세요" />
         <button id="search-btn" type="submit">
-          <i class="fas fa-search"></i>
+          <i className="fas fa-search"></i>
         </button>
       </form>
 
