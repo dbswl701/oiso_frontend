@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './MyPage.css';
 import ItemList from './BookingList'
 import BookingList from './BookingList'
+import WishList from './WishList'
 
 function MyPage() {
   // 날짜, 수령완료/예약 완료, 상품 명, 가격, 수량
@@ -15,6 +16,7 @@ function MyPage() {
   // })
   const [itemList, setItemList] = useState([{
     id: 1,
+    wish: true,
     date: '2022/11/26',
     isAccept: false,
     itemName: '플래너',
@@ -23,6 +25,7 @@ function MyPage() {
     img: 'https://motemote.kr/web/product/big/201908/656b363e1c8edec65afc77af20017eb9.jpg',
   },{
     id: 2,
+    wish: false,
     date: '2022/11/26',
     isAccept: true,
     itemName: '사과',
@@ -53,7 +56,8 @@ function MyPage() {
           <button>최근 1년</button>
         </div>
         <article>
-          <BookingList itemList={itemList}/>
+          <BookingList itemList={itemList} whichList='booking'/>
+          {/* <WishList itemList={itemList} whichList='wish'/> */}
         </article>
       </div>
       
