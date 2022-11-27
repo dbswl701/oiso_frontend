@@ -3,6 +3,7 @@ import './App.css';
 import Main from './Component/Main';
 import Login from './Component/Login';
 import RegistItem from './Component/RegistItem'
+import MyPage from './Component/MyPage'
 
 function App() {
   return (
@@ -14,7 +15,10 @@ function App() {
       {/* <Login /> */}
 
       {/* 상품 등록 페이지 */}
-      <RegistItem />
+      {/* <RegistItem /> */}
+
+      {/* 마이페이지 */}
+      <MyPage />
     </div>
   );
 }
