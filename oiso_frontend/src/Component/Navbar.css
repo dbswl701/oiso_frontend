@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0px;
 }
 
 #navbar {
@@ -11,6 +11,13 @@ body {
   height: 60px;
 }
 
+
+#logo img{
+  vertical-align: middle;
+  width: 90px;
+  height: 45px;
+}
+
 #logo {
   float: left;
   line-height: 60px;
@@ -19,6 +26,53 @@ body {
 #logo img{
   vertical-align: middle;
 }
+
+
+#search-box {
+  box-sizing: content-box;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #d5d9dc;
+  height: 30px;
+  padding: 10px;
+  border-radius: 40px; /* 추가 */
+
+}
+
+#search-txt {
+  float: left;
+  padding: 0;
+  padding-left: 10px;
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  line-height: 30px;
+  width: 300px;
+}
+
+#search-btn {
+  color: #EDEDED;
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #949BA0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
 
 #menu {
   list-style: none;

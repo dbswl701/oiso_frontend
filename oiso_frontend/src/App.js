@@ -38,12 +38,12 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/registItem' element={<RegistItem />} />
         <Route path='/myPage' element={<MyPage />} />
-        <Route path='/myPage/bookingList' element={<BookingList itemList={itemList} whichList='booking'/>} />
+        {/* <Route path='/myPage/bookingList' element={<BookingList itemList={itemList} whichList='booking'/>} />
         <Route path='/myPage/wishList' element={<WishList itemList={itemList} whichList='wish'/>} />
         <Route path='/myPage/inquiry' element={<BookingList />} />
         <Route path='/myPage/regitStore' element={<BookingList />} />
         <Route path='/myPage/modifySalesText' element={<BookingList />} />
-        <Route path='/myPage/modifyUser' element={<BookingList />} />
+        <Route path='/myPage/modifyUser' element={<BookingList />} /> */}
       </Routes>
     </div>
   )
