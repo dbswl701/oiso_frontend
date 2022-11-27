@@ -3,7 +3,7 @@ import './App.css';
 import Main from './Component/Main';
 import Login from './Component/Login';
 import RegistItem from './Component/RegistItem'
-import MyPage from './Component/MyPage'
+import MyPage from './Component/MyPage/MyPage'
 
 function App() {
   return (

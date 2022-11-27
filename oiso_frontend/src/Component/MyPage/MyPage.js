@@ -1,7 +1,8 @@
-import Navbar from './Navbar';
+import Navbar from '../Navbar';
 import { useState } from 'react';
 import './MyPage.css';
 import ItemList from './ItemList'
+import BookingList from './BookingList'
 
 function MyPage() {
   // 날짜, 수령완료/예약 완료, 상품 명, 가격, 수량
@@ -52,6 +53,7 @@ function MyPage() {
           <button>최근 1년</button>
         </div>
         <article>
+          <BookingList />
           <ItemList itemList={itemList}/>
         </article>
       </div>

@@ -1,4 +1,3 @@
-import Navbar from './Navbar';
 import { useState } from 'react';
 import './Item.css';
 
