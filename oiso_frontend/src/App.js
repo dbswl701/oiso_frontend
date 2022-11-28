@@ -7,7 +7,7 @@ import MyPage from './Component/MyPage/MyPage'
 import BookingList from './Component/MyPage/BookingList'
 import WishList from './Component/MyPage/WishList'
 import InquiryList from './Component/MyPage/InquiryList'
-
+import RegitStore from './Component/MyPage/RegitStore';
 import SignUp from './Component/SignUp'
 import { useState } from 'react';
 
@@ -47,7 +47,7 @@ function App() {
         <Route path='/myPage/bookingList' element={<BookingList itemList={itemList} whichList='booking'/>} />
         <Route path='/myPage/wishList' element={<WishList itemList={itemList} whichList='wish'/>} />
         <Route path='/myPage/inquiry' element={<InquiryList itemList={itemList} whichList='inquiry'/>} />
-        <Route path='/myPage/regitStore' element={<BookingList />} />
+        <Route path='/myPage/regitStore' element={<RegitStore />} />
         <Route path='/myPage/modifySalesText' element={<BookingList />} />
         <Route path='/myPage/modifyUser' element={<BookingList />} />
       </Routes>
