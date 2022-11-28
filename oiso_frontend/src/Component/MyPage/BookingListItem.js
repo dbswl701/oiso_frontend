@@ -2,7 +2,6 @@ import { useState } from 'react';
 import './Item.css';
 
 function Item({item, whichList}) {
-  const [id, setId] = useState('');
 
   // 예약 목록 -> 날짜, 수령여부, 이름, 가격, 수량, 사진
   const bookingItem = (
@@ -33,40 +32,10 @@ function Item({item, whichList}) {
       
     </div>
   );
-  // 찜 목록 -> 이름, 가격, 수량, 사진
-  const wishItem = (
-    <div id = "item-wish-content">
-      <div id="item-img">
-        <img src = {item.img}></img>
-      </div>
-      <div id="item-txt">
-        <p>{item.itemName}</p>
-        <p>{item.price}</p>
-        <p>{item.quantity}</p>
-      </div>
-      <div id="item-btn">
-        <button>예약하기</button>
-        <button>삭제</button>
-      </div>
-    </div>
-  );
-  const inquiry = (
-    <div id = "item-inquiry-content">
-      <div id="item-img">
-        <img src = {item.img}></img>
-      </div>
-      <div id="item-txt">
-        <p>{item.date}</p>
-        <p>{item.itemName}</p>
-        <p>{item.price}</p>
-        <p>{item.quantity}</p>
-        <p>{item.itemName}</p>
-      </div>
-    </div>
-  );
+  
   return (
     <>
-      {/* {whichList==='wish' ? wishItem : bookingItem }       */}
+      { bookingItem }      
     </>
   );
 }

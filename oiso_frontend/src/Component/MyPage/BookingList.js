@@ -3,7 +3,7 @@ import './MyPage.css';
 import Item from './Item'
 import Navbar from '../Navbar'
 import Sidebar from './Sidebar'
-
+import BookingListItem from './BookingListItem';
 function BookingList({itemList}) {
 
   return (
@@ -20,7 +20,7 @@ function BookingList({itemList}) {
         </div>
 
         {itemList.map((item)=>{
-        return <Item item={item} key={item.id} />
+        return <BookingListItem item={item} key={item.id} />
       })} 
       </div>
 

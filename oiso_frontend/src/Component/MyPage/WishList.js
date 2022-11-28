@@ -3,7 +3,7 @@ import './MyPage.css';
 import Item from './Item'
 import Navbar from '../Navbar'
 import Sidebar from './Sidebar'
-
+import WishListItem from './WishListItem';
 function WishList({itemList, whichList}) {
 
   return (
@@ -12,7 +12,7 @@ function WishList({itemList, whichList}) {
       <Sidebar />
       {itemList.map((item)=>{
         if(!item.wish) return;
-        return <Item item={item} whichList={whichList} key={item.id} />
+        return <WishListItem item={item} whichList={whichList} key={item.id} />
       })} 
     </>
   );
