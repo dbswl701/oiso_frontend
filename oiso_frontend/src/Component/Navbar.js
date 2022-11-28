@@ -6,7 +6,7 @@ function Navbar(){
 
   return (
     <div id="navbar">
-      <Link id="logo" to ='./areaSearch'>
+      <Link id="logo" to ='./'>
       <img src='logo.png'></img>
       </Link>
       <form id="search-box">

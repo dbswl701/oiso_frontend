@@ -6,6 +6,7 @@ import RegistItem from './Component/RegistItem'
 import MyPage from './Component/MyPage/MyPage'
 import BookingList from './Component/MyPage/BookingList'
 import WishList from './Component/MyPage/WishList'
+import SignUp from './Component/SignUp'
 import { useState } from 'react';
 
 
@@ -36,6 +37,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Main />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/signUp' element={<SignUp />} />
         <Route path='/registItem' element={<RegistItem />} />
         <Route path='/myPage' element={<MyPage />} />
         {/* <Route path='/myPage/bookingList' element={<BookingList itemList={itemList} whichList='booking'/>} />
