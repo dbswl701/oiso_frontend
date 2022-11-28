@@ -21,6 +21,7 @@ function App() {
     price: '10,000',
     quantity: '2',
     img: 'https://motemote.kr/web/product/big/201908/656b363e1c8edec65afc77af20017eb9.jpg',
+    time: '7',
   },{
     id: 2,
     wish: false,
@@ -30,6 +31,7 @@ function App() {
     price: '5,000',
     quantity: '5',
     img:`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVwFpaQ5iT01rIf5rHav_BL12ncSHYTYs-xdM8z9w9wVFz1Fq6P8MJNeUgJ6y-hKkR7BU&usqp=CAU`,
+    time: '3',
   }])
   console.log(itemList);
   return (
@@ -40,12 +42,12 @@ function App() {
         <Route path='/signUp' element={<SignUp />} />
         <Route path='/registItem' element={<RegistItem />} />
         <Route path='/myPage' element={<MyPage />} />
-        {/* <Route path='/myPage/bookingList' element={<BookingList itemList={itemList} whichList='booking'/>} />
+        <Route path='/myPage/bookingList' element={<BookingList itemList={itemList} whichList='booking'/>} />
         <Route path='/myPage/wishList' element={<WishList itemList={itemList} whichList='wish'/>} />
         <Route path='/myPage/inquiry' element={<BookingList />} />
         <Route path='/myPage/regitStore' element={<BookingList />} />
         <Route path='/myPage/modifySalesText' element={<BookingList />} />
-        <Route path='/myPage/modifyUser' element={<BookingList />} /> */}
+        <Route path='/myPage/modifyUser' element={<BookingList />} />
       </Routes>
     </div>
   )
