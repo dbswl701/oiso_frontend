@@ -5,6 +5,19 @@
   position: fixed;
 }
 
+/* 최근 기록 버튼 */
+#section button{
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 100px;
+  padding: 5px;
+  margin-right: 20px;
+  margin-top: 20px;
+  /* font-color */
+}
+
 /* a 태그 밑줄 제거 */
 #side-navbar a {
   text-decoration: none;
@@ -20,6 +33,6 @@
 }
 
 #main {
-  margin-left: 250px;
+  margin-left: 300px;
   /* display: flex; */
 }

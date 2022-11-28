@@ -25,7 +25,7 @@ function Item({item, whichList}) {
         </div>
         <div id='item-btn'>
           <button>예약 시간 변경</button>
-          <input type="number"></input><br />
+          {/* <input type="number"></input> */}
           <button>리뷰 작성</button>
           {/* <textarea></textarea><br /> */}
         </div>
@@ -35,18 +35,18 @@ function Item({item, whichList}) {
   );
   // 찜 목록 -> 이름, 가격, 수량, 사진
   const wishItem = (
-    <div id = "itemInfo">
-      <div id="img">
+    <div id = "item-wish-content">
+      <div id="item-img">
         <img src = {item.img}></img>
       </div>
-      <div id="content">
+      <div id="item-txt">
         <p>{item.itemName}</p>
         <p>{item.price}</p>
         <p>{item.quantity}</p>
       </div>
-      <div>
-      <button>예약하기</button>
-      <button>삭제</button>
+      <div id="item-btn">
+        <button>예약하기</button>
+        <button>삭제</button>
       </div>
     </div>
   );
