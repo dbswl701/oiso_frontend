@@ -6,8 +6,8 @@ function Navbar(){
 
   return (
     <div id="navbar">
-      <Link id="logo" to ='./'>
-      <img src='logo.png'></img>
+      <Link id="logo" to ='/'>
+        <img src='logo.png'></img>
       </Link>
       <form id="search-box">
         <input id="search-txt" type="text" placeholder="검색어를 입력해주세요" />
