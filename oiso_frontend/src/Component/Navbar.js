@@ -21,6 +21,7 @@ function Navbar(){
         <Link to ='/categorySearch'><li>카테고리별 검색</li></Link>
         <Link to ='/login'><li>로그인</li></Link>
         <Link to ='/signUp'><li>회원가입</li></Link>
+        <Link to ='/bookingList'><li>마이페이지</li></Link>
       </ul> 
     </div>
   )

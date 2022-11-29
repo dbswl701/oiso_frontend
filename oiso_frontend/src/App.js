@@ -1,7 +1,7 @@
 import './App.css';
 // import Navbar from './Component/Navber';
 import Main from './Component/Main';
-import Login from './Component/Login';
+import Login from './Component/User/Login';
 import RegistItem from './Component/RegistItem'
 import MyPage from './Component/MyPage/MyPage'
 import BookingList from './Component/MyPage/BookingList'
@@ -9,8 +9,7 @@ import WishList from './Component/MyPage/WishList'
 import InquiryList from './Component/MyPage/InquiryList'
 import RegitStore from './Component/MyPage/RegitStore';
 import ModifySalesText from './Component/MyPage/ModifySalesText';
-
-import SignUp from './Component/SignUp'
+import SignUp from './Component/User/SignUp'
 
 import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
