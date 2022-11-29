@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Item.css';
 
-function Item({item, whichList}) {
+function BookingListItem({item, whichList}) {
 
   // 예약 목록 -> 날짜, 수령여부, 이름, 가격, 수량, 사진
   const bookingItem = (
@@ -40,4 +40,4 @@ function Item({item, whichList}) {
   );
 }
 
-export default Item;
+export default BookingListItem;
