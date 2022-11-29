@@ -8,11 +8,13 @@ import BookingList from './Component/MyPage/BookingList'
 import WishList from './Component/MyPage/WishList'
 import InquiryList from './Component/MyPage/InquiryList'
 import RegitStore from './Component/MyPage/RegitStore';
+import ModifySalesText from './Component/MyPage/ModifySalesText';
+
 import SignUp from './Component/SignUp'
+
 import { useState } from 'react';
-
-
 import { Routes, Route } from 'react-router-dom';
+
 function App() {
   const [itemList, setItemList] = useState([{
     id: 1,
@@ -48,7 +50,7 @@ function App() {
         <Route path='/wishList' element={<WishList itemList={itemList} whichList='wish'/>} />
         <Route path='/inquiry' element={<InquiryList itemList={itemList} whichList='inquiry'/>} />
         <Route path='/regitStore' element={<RegitStore />} />
-        <Route path='/modifySalesText' element={<BookingList />} />
+        <Route path='/modifySalesText' element={<ModifySalesText />} />
         <Route path='/modifyUser' element={<BookingList />} />
       </Routes>
     </div>
