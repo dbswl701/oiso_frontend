@@ -43,13 +43,13 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/signUp' element={<SignUp />} />
         <Route path='/registItem' element={<RegistItem />} />
-        <Route path='/myPage' element={<MyPage />} />
-        <Route path='/myPage/bookingList' element={<BookingList itemList={itemList} whichList='booking'/>} />
-        <Route path='/myPage/wishList' element={<WishList itemList={itemList} whichList='wish'/>} />
-        <Route path='/myPage/inquiry' element={<InquiryList itemList={itemList} whichList='inquiry'/>} />
-        <Route path='/myPage/regitStore' element={<RegitStore />} />
-        <Route path='/myPage/modifySalesText' element={<BookingList />} />
-        <Route path='/myPage/modifyUser' element={<BookingList />} />
+        {/* <Route path='/myPage' element={<MyPage />} /> */}
+        <Route path='/bookingList' element={<BookingList itemList={itemList} whichList='booking'/>} />
+        <Route path='/wishList' element={<WishList itemList={itemList} whichList='wish'/>} />
+        <Route path='/inquiry' element={<InquiryList itemList={itemList} whichList='inquiry'/>} />
+        <Route path='/regitStore' element={<RegitStore />} />
+        <Route path='/modifySalesText' element={<BookingList />} />
+        <Route path='/modifyUser' element={<BookingList />} />
       </Routes>
     </div>
   )
